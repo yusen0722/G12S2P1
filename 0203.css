@@ -1,0 +1,238 @@
+#headb{
+  position: absolute;
+  top: -1%;
+  left: -10%;
+  width: 110%;
+  height: 70px;
+  border: 1px solid black;
+}
+
+body{
+    background-color: #FFFFF0;
+}
+
+#collection{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 12%;
+  top: -1.5%;
+}
+
+#carpets{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 25%;
+  top: -1.5%;
+}
+
+#curtains{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 36%;
+  top: -1.5%;
+}
+
+#home{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 48%;
+  top: -1.5%;
+}
+
+#furniture{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 58%;
+  top: -1.5%;
+}
+
+#lighting{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 71%;
+  top: -1.5%;
+}
+
+#plants{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 84%;
+  top: -1.5%;
+}
+
+.main-grid {
+    position: relative;
+    top: 120px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.furniture-hero {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: white; 
+    overflow: hidden;
+}
+
+.furniture-hero:hover {
+    transform: scale(1.01); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-label {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.season-label {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.sketch-placeholder {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+.categories-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 300px;
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 20px;
+    flex: 1; 
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card2 {
+    border: 2px solid black;
+    border-radius: 20px;
+    flex: 1; 
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    z-index: 10;
+}
+
+#meat{
+    z-index: 2;
+    position: relative;
+}
+
+#veg{
+    z-index: 2;
+    position: relative;
+}
+
+#scream{
+    z-index: 2;
+    position: relative;
+}
+
+.hero-bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; 
+    opacity: 0.8;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-label, .season-label {
+    z-index: 3;
+}
+
+.lighting-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.lighting-card:hover video {
+    opacity: 1;
+}
+
+.collection-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.collection-card:hover video {
+    opacity: 1;
+}
+
+.plants-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.plants-card:hover video {
+    opacity: 1;
+}

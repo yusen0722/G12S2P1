@@ -1,0 +1,91 @@
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div id='headb'></div>
+    <div id='collection'><p onclick="window.location.href='collection.html'">Collection</p></div>
+    <div id='carpets'><p onclick="window.location.href='carpets.html'">Carpets</p></div>
+    <div id='curtains'><p onclick="window.location.href='curtains.html'">Curtains</p></div>
+    <div id='home'><p onclick="window.location.href='0203.html'">Home</p></div>
+    <div id='furniture'><p onclick="window.location.href='furniture.html'">Furniture</p></div>
+    <div id='lighting'><p onclick="window.location.href='lighting.html'">Lighting</p></div>
+    <div id='plants'><p onclick="window.location.href='Plants.html'">Plants</p></div>
+
+    <div class="cart-container">
+        
+        <div class="cart-items" id="cart-items-container">
+            <h2>Your Cart</h2>
+        </div>
+
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal-amt">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span id="shipping-amt">$0.00</span>
+            </div>
+            
+            <hr>
+            
+            <div class="summary-row total-row">
+                <span>Total</span>
+                <span id="total-amt">$0.00</span>
+            </div>
+
+            <button class="checkout-btn" onclick="clearCart()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem("myCart")) || [];
+        let container = document.getElementById("cart-items-container");
+        let subtotal = 0;
+
+        if (cart.length === 0) {
+            container.innerHTML += "<p style='margin-top: 20px;'>Your cart is empty!</p>";
+        } else {
+
+            cart.forEach(item => {
+                let itemHTML = `
+                    <div class="cart-item">
+                        <img src="${item.image}" alt="${item.name}">
+                        <div class="item-details">
+                            <h3>${item.name}</h3>
+                        </div>
+                        <div class="item-price">${item.price}</div>
+                    </div>
+                `;
+                container.innerHTML += itemHTML;
+
+                let numericPrice = parseFloat(item.price.replace('$', '').replace(',', ''));
+                subtotal += numericPrice;
+            });
+        }
+
+        let shipping = cart.length > 0 ? 50.00 : 0.00;
+        let total = subtotal + shipping;
+
+        document.getElementById("subtotal-amt").innerText = "$" + subtotal.toFixed(2);
+        document.getElementById("shipping-amt").innerText = "$" + shipping.toFixed(2);
+        document.getElementById("total-amt").innerText = "$" + total.toFixed(2);
+
+        function clearCart() {
+            if (cart.length > 0) {
+                alert("Thank you for your purchase!");
+                localStorage.removeItem("myCart");
+                window.location.reload();
+            } else {
+                alert("Your cart is empty!");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <title>Webpage Design</title>
+  <link rel="stylesheet" href="0203.css">
+</head>
+
+<body>
+    <div id='headb'></div>
+	<div id='collection'><p onclick="window.location.href='collection.html'">Collection</p></div>
+	<div id='carpets'><p onclick="window.location.href='carpets.html'">Carpets</p></div>
+	<div id='curtains'><p onclick="window.location.href='curtains.html'">Curtains</p></div>
+	<div id='home'><p onclick="window.location.href='0203.html'">Home</p></div>
+	<div id='furniture'><p onclick="window.location.href='furniture.html'">Furniture</p></div>
+	<div id='lighting'><p onclick="window.location.href='lighting.html'">Lighting</p></div>
+	<div id='plants'><p onclick="window.location.href='Plants.html'">Plants</p></div>
+
+    <div class="main-grid">
+        
+    <a href="collection.html" style="text-decoration: none; color: black;" >
+    <div class="furniture-hero"
+         onmouseover="this.querySelector('.hero-bg-video').play()" 
+         onmouseout="this.querySelector('.hero-bg-video').pause()">
+        <video class="hero-bg-video" muted loop playsinline>
+            <source src="/Users/easonlin/Desktop/KAS/G12/CS/images/qmsht.mov" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <img id='meat' src="/Users/easonlin/Desktop/KAS/G12/CS/images/Meat.png" class="sketch-placeholder">
+            <img id='veg' src="/Users/easonlin/Desktop/KAS/G12/CS/images/Veg.png" class="sketch-placeholder">
+            <img id="scream" src="/Users/easonlin/Desktop/KAS/G12/CS/images/Ding.png" class="sketch-placeholder">
+        </div>
+        <div class="hero-label">Collection</div>
+        <div class="season-label">25-26 AW Collection</div>
+    </div>
+    </a>
+
+        <div class="categories-row">
+            
+            <div class="card collection-card" onclick="window.location.href='furniture.html'">
+                <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="/Users/easonlin/Desktop/KAS/G12/CS/images/furvid.mp4" type="video/mp4">
+                </video>
+                <h2>Furniture</h2>
+            </div>
+
+            <div class="card lighting-card" onclick="window.location.href='lighting.html'">
+                <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="/Users/easonlin/Desktop/KAS/G12/CS/images/lightvid.mp4" type="video/mp4">
+                </video>
+                <h2>Lighting</h2>
+            </div>
+
+            <div class="card plants-card" onclick="window.location.href='plants.html'">
+               <video muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="/Users/easonlin/Desktop/KAS/G12/CS/images/plantvid.mp4" type="video/mp4">
+                </video>
+                <h2>Plants</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="margin-top: 100px; text-align: center;"> </div>
+
+</body>
+
+</html>

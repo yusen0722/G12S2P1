@@ -1,0 +1,235 @@
+.collection-img {
+    position: absolute;
+    border: black solid 5px;
+    opacity: 0; 
+    transition: all 1.5s cubic-bezier(0.25, 1, 0.5, 1); 
+}
+
+body{
+  background-color: #E3DAC9;
+}
+
+#imgone{
+  top: -20%; 
+  left: -20%;
+  width: 170px;
+}
+
+#imgtwo{ 
+  top: -20%; 
+  left: 40%;  
+  width: 170px; 
+}
+
+#imgthree{ 
+  top: -20%; 
+  left: 120%; 
+  width: 170px; 
+}
+
+#imgfour{ 
+  top: 120%; 
+  left: -20%; 
+  width: 170px; 
+}
+
+#imgfive{
+  top: 120%;
+  left: 40%;
+  width: 170px; 
+}
+
+#imgsix{ 
+  top: 120%;
+  left: 120%;
+  width: 170px;
+}
+
+.show-images #imgone{ 
+  top: 15%; 
+  left: 10%; 
+  width: 280px; 
+  opacity: 1; 
+  transform: rotate(-4deg); 
+  z-index: 3; 
+}
+
+.show-images #imgtwo{
+  top: 10%; l
+  eft: 35%; 
+  width: 220px; 
+  opacity: 1; 
+  transform: rotate(3deg);  
+  z-index: 2; 
+}
+
+.show-images #imgthree{ 
+  top: 20%; 
+  left: 60%; 
+  width: 320px; 
+  opacity: 1; 
+  transform: rotate(-2deg); 
+  z-index: 4; 
+}
+
+.show-images #imgfour{ 
+  top: 50%; 
+  left: 15%; 
+  width: 200px; 
+  opacity: 1; 
+  transform: rotate(5deg);  
+  z-index: 5; 
+}
+
+.show-images #imgfive{ 
+  top: 55%; 
+  left: 42%; 
+  width: 260px; 
+  pacity: 1; 
+  transform: rotate(-3deg); 
+  z-index: 6; 
+}
+
+.show-images #imgsix{ 
+  top: 45%; 
+  left: 68%; 
+  width: 240px; 
+  opacity: 1; 
+  transform: rotate(6deg);  
+  z-index: 1; 
+}
+
+#headborder{
+  position: absolute;
+  top: -1%;
+  left: -10%;
+  width: 110%;
+  height: 70px;
+  border: 1px solid black;
+}
+
+#collection{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 12%;
+  top: -1.5%;
+}
+
+#carpets{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 25%;
+  top: -1.5%;
+}
+
+#curtains{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 36%;
+  top: -1.5%;
+}
+
+#home{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 48%;
+  top: -1.5%;
+}
+
+#furniture{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 58%;
+  top: -1.5%;
+}
+
+#lighting{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 71%;
+  top: -1.5%;
+}
+
+#plants{
+  font-size: 30px;
+  z-index: 2;
+  position: absolute;
+  left: 84%;
+  top: -1.5%;
+}
+
+#background{
+    position: relative;
+    left: -5%;
+    top: -5%;
+    z-index: 1;
+    height: 110%;
+    width: 110%;
+    display: flex;
+}
+
+.main-grid {
+    position: relative;
+    top: 120px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.itemone {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 300px;
+    gap: 20px;
+    z-index: 2;
+}
+
+.itemtwo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 300px;
+    gap: 20px;
+    z-index: 2;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 20px;
+    flex: 1; 
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    z-index: 10;
+}
+
+#veg{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+#contact{
+    position: absolute;
+    bottom: 5%;
+    left: 36%;
+    font-size: 18px;
+}

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>Collection</title>
+  <link rel="stylesheet" href="collection.css">
+</head>
+
+<body>
+
+    <div id='headb'></div>
+    
+    <div id='collection'><p>Collection</p></div>
+    
+    <div id='carpets'><p onclick="window.location.href='carpets.html'">Carpets</p></div>
+    <div id='curtains'><p onclick="window.location.href='curtains.html'">Curtains</p></div>
+    <div id='home'><p onclick="window.location.href='0203.html'">Home</p></div>
+    <div id='furniture'><p onclick="window.location.href='furniture.html'">Furniture</p></div>
+    <div id='lighting'><p onclick="window.location.href='lighting.html'">Lighting</p></div>
+    <div id='plants'><p onclick="window.location.href='Plants.html'">Plants</p></div>
+    
+    <div class="main-grid">
+        <img id="imgone" class="collection-img" src='/Users/easonlin/Desktop/KAS/G12/CS/images/flone.avif'>
+        <img id="imgtwo" class="collection-img" src='/Users/easonlin/Desktop/KAS/G12/CS/images/flotwo.avif'>
+        <img id="imgthree" class="collection-img" src='/Users/easonlin/Desktop/KAS/G12/CS/images/flothree.avif'>
+        <img id="imgfour" class="collection-img" src='/Users/easonlin/Desktop/KAS/G12/CS/images/flow 4.avif'>
+        <img id="imgfive" class="collection-img" src='/Users/easonlin/Desktop/KAS/G12/CS/images/flowfive.avif'>
+        <img id="imgsix" class="collection-img" src='/Users/easonlin/Desktop/KAS/G12/CS/images/flowsix.webp'>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.body.classList.add('show-images');
+            }, 100);
+        };
+    </script>
+
+    <p id="contact">"If wish to afford, please contact us or visit virtual shop"</p>
+
+</body>
+
+</html>
